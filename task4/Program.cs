@@ -123,6 +123,10 @@ namespace task4
             double total = amount + Fee;
             return base.Withdraw(total);
         }
+          public override string ToString()
+  {
+      return $"{base.ToString()}, Fee: {Fee}";
+  }
     }
 
     public class TrustAccount : SavingsAccount
